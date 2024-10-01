@@ -7,7 +7,7 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        int x1 = 9, y1 = 9, x2 = -9, y2 = -9;
+        int x1 = -7, y1 = 6, x2 = 9, y2 = -7;
         double result = distance(x1, y1, x2, y2);
         System.out.println("result = " + result);
     }

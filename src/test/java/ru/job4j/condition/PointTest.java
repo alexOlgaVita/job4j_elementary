@@ -47,4 +47,12 @@ class PointTest {
         double output = Point.distance(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void whenPointsMinus7And6And9AndMinus7Then20Dot62() {
+        int x1 = -7, y1 = 6, x2 = 9, y2 = -7;
+        double expected = 20.62;
+        double output = Point.distance(x1, y1, x2, y2);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
