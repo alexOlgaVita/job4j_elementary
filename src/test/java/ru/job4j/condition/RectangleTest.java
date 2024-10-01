@@ -24,6 +24,7 @@ class RectangleTest {
         double output = Rectangle.diagonal(length, width);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
     @Test
     void whenLength5AndWidth12ThenDiagonal13() {
         double length = 5;
