@@ -77,7 +77,6 @@ class SwitchArrayTest {
         assertThat(result).containsExactly(expected);
     }
 
-    //////
     @Test
     void whenSwap0to6() {
         int[] input = {11, 2, 3, 4, 5, 6, 12};
