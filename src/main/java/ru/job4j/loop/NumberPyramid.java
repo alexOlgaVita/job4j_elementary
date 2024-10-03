@@ -23,5 +23,11 @@ public class NumberPyramid {
         draw(5);
         System.out.println("Number pyramid of height 7:");
         draw(7);
+        System.out.println("Number pyramid of height 0:");
+        draw(0);
+        System.out.println("Number pyramid of height 1:");
+        draw(1);
+        System.out.println("Number pyramid of height 2:");
+        draw(2);
     }
 }
