@@ -6,11 +6,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class TwoNumberSumTest {
     @Test
-    void whenTwoEqualsNumbersYesTarget() {
+    void whenTwoEqualsNumbersYesSumNoTarget() {
         int[] array = {5, 5};
         int target = 10;
         int[] result = TwoNumberSum.getIndexes(array, target);
-        int[] expected = {0, 1};
+        int[] expected = {};
         assertThat(result).isEqualTo(expected);
     }
 
