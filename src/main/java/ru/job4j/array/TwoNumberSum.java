@@ -7,6 +7,8 @@ public class TwoNumberSum {
             int j = i + 1;
             int s = array[i];
             while (j < array.length && s < target) {
+                /* это улосвие здесь присутствует, исходя из условия задачи: "- одно и то же число можно использовать только один раз;"
+                Соответственно, я поправила тест и его название: "whenTwoEqualsNumbersYesTarget()" -> "whenTwoEqualsNumbersYesSumNoTarget()" */
                 if (array[i] != array[j]) {
                     s = array[i] + array[j];
                 }
