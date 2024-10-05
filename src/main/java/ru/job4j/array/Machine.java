@@ -27,7 +27,7 @@ public class Machine {
         money -= price;
         int i = 0;
         while (money != 0) {
-            if (money - coins[i] < 0) {
+            if (money < coins[i]) {
                 i++;
             } else {
                 result[size++] = coins[i];
