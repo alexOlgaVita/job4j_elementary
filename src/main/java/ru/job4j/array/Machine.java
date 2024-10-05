@@ -24,14 +24,14 @@ public class Machine {
         int[] coins = {10, 5, 2, 1};
         int[] result = new int[100];
         int size = 0;
-        result[result.length - 1] = money - price;
+        money -= price;
         int i = 0;
-        while (result[result.length - 1] != 0) {
-            if (result[result.length - 1] - coins[i] < 0) {
+        while (money != 0) {
+            if (money - coins[i] < 0) {
                 i++;
             } else {
                 result[size++] = coins[i];
-                result[result.length - 1] = result[result.length - 1] - coins[i];
+                money -= coins[i];
             }
         }
         return Arrays.copyOf(result, size);
