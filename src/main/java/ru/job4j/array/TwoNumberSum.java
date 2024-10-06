@@ -24,7 +24,7 @@ public class TwoNumberSum {
         return arrayResult;
     }
 
-    public static int[] getIndexes(int[] array, int target) {
+    public static int[] getIndexesNotOptimal2(int[] array, int target) {
         int[] arrayResult = new int[0];
         int i = 0;
         int j = 1;
@@ -39,6 +39,25 @@ public class TwoNumberSum {
                 break;
             } else {
                 j++;
+            }
+        }
+        return arrayResult;
+    }
+
+    public static int[] getIndexes(int[] array, int target) {
+        int[] arrayResult = new int[0];
+        int i = 0;
+        int j = array.length - 1;
+        while (j !=  i) {
+            if ((array[i] + array[j] < target) || (array[i] == array[j])) {
+                i++;
+            } else if (array[i] + array[j] == target) {
+                arrayResult = new int[2];
+                arrayResult[0] = i;
+                arrayResult[1] = j;
+                break;
+            } else {
+               j--;
             }
         }
         return arrayResult;
